@@ -1,5 +1,5 @@
 body{
-    background-color: black;
+     background-color: black; 
 }
 
 .logo{
@@ -20,7 +20,7 @@ body{
     float:left;
     margin:auto;
     padding:0;
-    background-color:black;
+     background-color:black;
     }
    #nav li a {
     display:block;
@@ -33,3 +33,41 @@ body{
    #nav li a:hover {
     color:#e50815;
     }
+
+  .haut{
+    height: 100px;
+  }
+  .petit-haut{
+    height: 50px;
+  }
+
+
+  .carte{
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px red; 
+    padding: 10px;
+    border-radius: 10px;
+    width: 150px;
+    height: 150px;
+
+    color: red;
+    text-align: center;
+    background-color: black
+  }
+  .carte:hover{
+    box-shadow: 0 25px 50px -12px #7C1921;
+    padding: 10px;   
+  }
+
+  .box-carte{
+    
+    display: flex;
+    width: 50%;
+  }
+
+  .netflixe{
+    width: 150px;
+    height: 150px;
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Netflix-new-icon.png/768px-Netflix-new-icon.png);
+    background-size: cover;
+  }
+
