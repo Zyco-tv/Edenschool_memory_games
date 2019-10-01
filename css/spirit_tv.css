@@ -1,0 +1,232 @@
+/* ALL FLEX */
+
+.flex{
+    display: flex;
+}
+
+.col{
+    flex-direction: column
+}
+.row{
+    flex-direction: row;
+}
+.column-r{
+    flex-direction: column-reverse;
+}
+.row-r{
+    flex-direction: row-reverse;
+}
+.wrap{
+    flex-wrap: wrap
+}
+.content-center{
+    justify-content: center;
+}
+.item-center{
+    align-items: center
+}
+.aligne-content{
+    align-content: center;
+}
+.grow-xs{
+    flex-grow: 1;
+}
+.grow-m{
+    flex-grow: 2;
+}
+.grow-l{
+    flex-grow: 3;
+}
+.grow-xl{
+    flex-grow: 4;
+}
+.order1{
+    order: 1;
+}
+.order2{
+    order: 2;
+}
+.order3{
+    order: 3;
+}
+.order4{
+    order: 4;
+}
+.order5{
+    order: 5;
+}
+.order6{
+    order: 6;
+}
+.order7{
+    order: 7;
+}
+.order8{
+    order: 8;
+}
+.order9{
+    order: 9;
+}
+.order10{
+    order: 10;
+}
+
+/* TEXT COLOR */
+
+.p-vert{
+    color: green
+}
+.p-rouge{
+    color: red
+}
+.p-bleu{
+    color: blue
+}
+.p-jaune{
+    color: yellow
+}
+.p-orange{
+    color: orange
+}
+.p-violet{
+    color: violet
+}
+.p-noire{
+    color: black
+}
+.p-blanc{
+    color: white
+}
+
+/* DISPLAY */
+
+.dis-bloc{
+    display: block;
+}
+.dis-cont{
+    display: contents;
+}
+.dis-line{
+    display: inline;
+}
+.dis-none{
+    display: none;
+}
+
+/* TEXT TAILLE */
+
+.txt-xs{
+    font-size:  1rem
+}
+.txt-m{
+    font-size: 2rem
+}
+.txt-l{
+    font-size: 3rem
+}
+.txt-xl{
+    font-size: 4rem
+}
+
+/* BACKGROUND COLOR */
+
+.bg-vert{
+    color: green
+}
+.bg-rouge{
+    color: red
+}
+.bg-bleu{
+    color: blue
+}
+.bg-jaune{
+    color: yellow
+}
+.bg-orange{
+    color: orange
+}
+.bg-violet{
+    color: violet
+}
+.bg-noire{
+    color: black
+}
+.bg-blanc{
+    color: white
+}
+
+/* BORDER */
+
+.border{
+    border: solid;
+}
+.border-xs{
+    border: 1rem solid;
+}
+.border-m{
+    border: 2rem solid;
+}
+.border-l{
+    border: 3rem solid;
+}
+.border-xl{
+    border: 4rem solid;
+}
+
+.border-dash-red{
+    border: dashed red;
+}
+.border-dash-vert{
+    border: dashed green
+}
+.border-dash-rouge{
+    border: dashed red
+}
+.border-dash-bleu{
+    border: dashed blue
+}
+.border-dash-jaune{
+    border: dashed yellow
+}
+.border-dash-orange{
+    border: dashed orange
+}
+.border-dash-violet{
+    border: dashed violet
+}
+.border-dash-noire{
+    border: dashed black
+}
+.border-dash-blanc{
+    border: dashed white
+}
+
+.border-thic-red{
+    border: thick double red;
+}
+.border-thic-vert{
+    border: thick double green
+}
+.border-thic-rouge{
+    border: thick double red
+}
+.border-thic-bleu{
+    border: thick double blue
+}
+.border-thic-jaune{
+    border: thick double yellow
+}
+.border-thic-orange{
+    border: thick double orange
+}
+.border-thic-violet{
+    border: thick double violet
+}
+.border-thic-noire{
+    border: thick double black
+}
+.border-thic-blanc{
+    border: thick double white
+}
+
+/*  */

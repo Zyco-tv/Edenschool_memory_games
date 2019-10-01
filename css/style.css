@@ -1,0 +1,35 @@
+body{
+    background-color: black;
+}
+
+.logo{
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+#nav ul {
+    margin:0;
+    padding:0;
+    list-style-type:none;
+    text-align:center;
+    
+    }
+   #nav li {
+    float:left;
+    margin:auto;
+    padding:0;
+    background-color:black;
+    }
+   #nav li a {
+    display:block;
+    width:85px;
+    margin-left: 10px;
+    color:white;
+    text-decoration:none;
+    padding:5px;
+    }
+   #nav li a:hover {
+    color:#e50815;
+    }
