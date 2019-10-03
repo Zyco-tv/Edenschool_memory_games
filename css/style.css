@@ -1,73 +1,67 @@
-body{
-     background-color: black; 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 20px 0;
+  background: black;
 }
 
 .logo{
-    display: block;
-  margin-left: auto;
-  margin-right: auto;
-  
+  display: block;
+margin-left: auto;
+margin-right: auto;
+
 }
 
-#nav ul {
-    margin:0;
-    padding:0;
-    list-style-type:none;
-    text-align:center;
-    
-    }
-   #nav li {
-    float:left;
-    margin:auto;
-    padding:0;
-     background-color:black;
-    }
-   #nav li a {
-    display:block;
-    width:85px;
-    margin-left: 10px;
-    color:white;
-    text-decoration:none;
-    padding:5px;
-    }
-   #nav li a:hover {
-    color:#e50815;
-    }
+.grid {
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
 
-  .haut{
-    height: 100px;
-  }
-  .petit-haut{
-    height: 50px;
-  }
+.card {
+  position: relative;
+  transition: all .4s linear;
+  transform-style: preserve-3d;
+  margin: 5px;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px red;
+}
 
+.card,
+.back,
+.front {
+  height: 150px;
+  width: 150px;
+}
 
-  .carte{
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px red; 
-    padding: 10px;
-    border-radius: 10px;
-    width: 150px;
-    height: 150px;
+.back,
+.front {
+  position: absolute;
+  backface-visibility: hidden;
+}
 
-    color: red;
-    text-align: center;
-    background-color: black
-  }
-  .carte:hover{
-    box-shadow: 0 25px 50px -12px #7C1921;
-    padding: 10px;   
-  }
+.front {
+  z-index: 2;
+  background: #FAB942 url(https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Netflix-new-icon.png/768px-Netflix-new-icon.png) no-repeat center center / contain;
+}
 
-  .box-carte{
-    
-    display: flex;
-    width: 50%;
-  }
+.back {
+  transform: rotateY(180deg);
+  background-color: black;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
 
-  .netflixe{
-    width: 150px;
-    height: 150px;
-    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Netflix-new-icon.png/768px-Netflix-new-icon.png);
-    background-size: cover;
-  }
+.selected {
+  transform: rotateY(180deg);
+}
 
+.match .front {
+  background: #6589F9 !important;
+}
