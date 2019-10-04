@@ -1,4 +1,4 @@
-'use strict';
+
 
 var cardsArray = [{
   'name': 'the',
@@ -47,9 +47,10 @@ var secondGuess = '';
 var count = 0;
 var previousTarget = null;
 var delay = 1200;
-
+var txt = document.getElementById('txt');
 var game = document.getElementById('game');
 var grid = document.createElement('section');
+var matchCards = document.getElementsByClassName('match');
 grid.setAttribute('class', 'grid');
 game.appendChild(grid);
 
@@ -79,6 +80,12 @@ var match = function match() {
   selected.forEach(function (card) {
     card.classList.add('match');
   });
+  console.log(matchCards.length)
+  if(matchCards.length == 24){
+    console.log(matchCards.length)
+      game.style.display = 'none';
+      txt.style.display = 'block';
+  }
 };
 
 var resetGuesses = function resetGuesses() {
@@ -116,9 +123,18 @@ grid.addEventListener('click', function (event) {
     if (firstGuess && secondGuess) {
       if (firstGuess === secondGuess) {
         setTimeout(match, delay);
+        
       }
       setTimeout(resetGuesses, delay);
+
+
+      // verifier si toutes les casee ont la classe "match"
+        //plateau on le vire
+        //affiche la div texte
+      
     }
     previousTarget = clicked;
   }
+
+  // verifier
 });
